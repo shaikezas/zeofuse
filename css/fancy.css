@@ -666,7 +666,7 @@
 /* ===== FOOTER ===== */
 .fz-footer { background: #10192A; color: rgba(255,255,255,0.75); padding: 80px 0 0; }
 .fz-footer-brand { padding-right: 32px; margin-bottom: 40px; }
-.fz-footer-logo { height: 38px; width: auto; margin-bottom: 18px; filter: brightness(10); opacity: 0.85; }
+.fz-footer-logo { height: 38px; width: auto; margin-bottom: 18px; background: #fff; padding: 7px 14px; border-radius: 8px; display: block; filter: none; opacity: 1; }
 .fz-footer-brand p { font-size: 0.86rem; color: rgba(255,255,255,0.48); line-height: 1.65; margin-bottom: 22px; }
 .fz-footer-socials { display: flex; gap: 10px; }
 .fz-footer-socials a {
