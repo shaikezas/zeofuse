@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zeofuse for Channels — Instantly access verified suppliers with structured product data. Automate onboarding, order routing, and catalog syndication via REST API.">
+    <meta name="robots" content="index, follow">
+    <title>Zeofuse for Channels — Access Suppliers. Automate Onboarding.</title>
+    <link rel="icon" type="image/png" href="images/zeofuse-fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fancy.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="spinner-wrapper">
+        <div class="loader"><div class="center loading"></div></div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand logo-image" href="index.html">
+                <img src="images/zeofuse_logo.png" alt="Zeofuse">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item"><a class="nav-link" href="index.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="suppliers.html">For Suppliers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="channels.html">For Channels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="contact.html">Get Demo</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="fz-inner-hero fz-inner-hero--channel">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="fz-eyebrow fz-inner-hero-badge">For Marketplaces &amp; Channels</span>
+                    <h1>Access verified suppliers.<br>Go live in days.</h1>
+                    <p>Connect your marketplace to Zeofuse and instantly tap into a growing network of suppliers with structured, channel-ready product data — and automated order routing back to them.</p>
+                    <div class="fz-hero-ctas">
+                        <a class="fz-btn-white" href="contact.html">Partner With Us</a>
+                        <a class="fz-btn-ghost" href="#how-it-works">See How It Works</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <div class="fz-dashboard-mockup" style="max-width:420px">
+                        <div class="fz-mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="fz-mockup-body">
+                            <img src="./images/partner-img.png" alt="Channel Dashboard" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM FOR CHANNELS -->
+    <section class="fz-pain-sec" style="background:#fff">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">The Problem</span>
+                <h2>Onboarding suppliers <span class="fz-highlight">at scale is broken</span></h2>
+                <p>Every marketplace faces the same challenge — sourcing quality suppliers is slow, messy, and expensive without the right infrastructure.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 reveal" style="--delay:0ms">
+                    <div class="fz-pain-card">
+                        <h5>Supplier onboarding takes weeks of back-and-forth</h5>
+                        <p>Getting a new supplier's product data into your system typically involves email threads, spreadsheet templates, and a lot of manual data cleaning.</p>
+                    </div>
+                    <div class="fz-pain-card">
+                        <h5>Product data quality is inconsistent</h5>
+                        <p>Every supplier formats their data differently. Your team spends hours normalizing, reformatting, and fixing product information before anything can go live.</p>
+                    </div>
+                    <div class="fz-pain-card">
+                        <h5>Order routing to suppliers is manual</h5>
+                        <p>Sending orders to suppliers via email, WhatsApp, or spreadsheet is error-prone, slow, and impossible to scale beyond a handful of suppliers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal" style="--delay:150ms">
+                    <div class="fz-pain-card">
+                        <h5>Real-time stock visibility is near-impossible</h5>
+                        <p>You're constantly showing products as "in stock" that your suppliers have already sold elsewhere. Cancellations damage your marketplace's reputation.</p>
+                    </div>
+                    <div class="fz-pain-card">
+                        <h5>Scaling supplier count multiplies operational complexity</h5>
+                        <p>Going from 10 suppliers to 100 suppliers doesn't just mean 10x the product count — it means 10x the operational complexity with no scalable system in place.</p>
+                    </div>
+                    <div class="fz-pain-card">
+                        <h5>No standardized supplier performance tracking</h5>
+                        <p>Which suppliers ship on time? Which ones have quality issues? Without a unified system, this data is buried in separate reports and support tickets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW ZEOFUSE WORKS FOR CHANNELS -->
+    <section class="fz-solution-sec" id="how-it-works" style="background:#F4F6F9">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-lg-0 order-lg-2 reveal">
+                    <span class="fz-eyebrow-dark">How Zeofuse Works for You</span>
+                    <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:#1E2D45;margin-bottom:16px;">Your marketplace. Zeofuse's supplier network.</h2>
+                    <p style="color:#6B7A8D;font-size:0.95rem;line-height:1.7;margin-bottom:32px;">Zeofuse acts as the middleware between your marketplace and a growing base of connected suppliers. One API integration gives you access to everything.</p>
+
+                    <div class="fz-solution-step" style="border-color:#E9EDF2">
+                        <div class="fz-solution-num">01</div>
+                        <div class="fz-solution-body">
+                            <h5>Integrate once via REST API</h5>
+                            <p>Connect your marketplace platform to Zeofuse with a single API integration. We provide full API documentation and an integration team to help you go live fast.</p>
+                        </div>
+                    </div>
+                    <div class="fz-solution-step" style="border-color:#E9EDF2">
+                        <div class="fz-solution-num">02</div>
+                        <div class="fz-solution-body">
+                            <h5>Access the Zeofuse supplier catalog</h5>
+                            <p>Once connected, browse and approve suppliers from the Zeofuse network. Their products arrive in your system in a standardized format — ready to publish immediately.</p>
+                        </div>
+                    </div>
+                    <div class="fz-solution-step" style="border-color:#E9EDF2">
+                        <div class="fz-solution-num">03</div>
+                        <div class="fz-solution-body">
+                            <h5>Orders route automatically</h5>
+                            <p>When a customer places an order on your marketplace, Zeofuse routes it to the right supplier automatically. Confirmations, tracking updates, and fulfillment status flow back to you in real time.</p>
+                        </div>
+                    </div>
+                    <div class="fz-solution-step" style="border-color:transparent">
+                        <div class="fz-solution-num">04</div>
+                        <div class="fz-solution-body">
+                            <h5>Monitor supplier performance</h5>
+                            <p>Track fulfillment rates, response times, return rates, and product quality scores across all your suppliers from a single dashboard. Set SLAs and get alerts automatically.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-1 reveal" style="--delay:100ms">
+                    <div class="fz-api-box">
+                        <div class="api-comment">// Connect your marketplace to Zeofuse</div>
+                        <br>
+                        <span class="api-key">POST</span> <span class="api-val">/v1/channels/connect</span>
+                        <br><br>
+                        {
+                        <br>&nbsp;&nbsp;<span class="api-string">"channel_id"</span>: <span class="api-val">"your-marketplace"</span>,
+                        <br>&nbsp;&nbsp;<span class="api-string">"webhook_url"</span>: <span class="api-val">"https://your.api/orders"</span>,
+                        <br>&nbsp;&nbsp;<span class="api-string">"catalog_sync"</span>: <span class="api-val">true</span>,
+                        <br>&nbsp;&nbsp;<span class="api-string">"inventory_sync"</span>: <span class="api-val">true</span>
+                        <br>}
+                        <br><br>
+                        <div class="api-comment">// Zeofuse responds with supplier catalog</div>
+                        <br>
+                        <span class="api-key">GET</span> <span class="api-val">/v1/suppliers/catalog</span>
+                        <br><br>
+                        <div class="api-comment">// Orders route automatically on sale</div>
+                        <br>
+                        <span class="api-key">POST</span> <span class="api-val">/v1/orders/route</span>
+                    </div>
+                    <p style="font-size:0.8rem;color:#9AACBD;margin-top:12px;text-align:center">REST API · Webhooks · Full documentation provided</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES FOR CHANNELS -->
+    <section class="fz-value-sec" style="background:#fff">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">What You Get</span>
+                <h2>Built for <span class="fz-highlight">marketplace operators</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:0ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><path d="M20 24l4 4 8-8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="10" stroke="#F47920" stroke-width="2.5"/></svg>
+                        </div>
+                        <h4>Standardized Supplier Data</h4>
+                        <p>Every supplier connected through Zeofuse delivers their catalog in a consistent, validated format. No more cleaning messy spreadsheets from 50 different suppliers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:100ms">
+                    <div class="fz-vcard fz-vcard--featured">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.15)"/><path d="M14 24h20M14 16h20M14 32h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>API-First Integration</h4>
+                        <p>One REST API connection gives you access to the entire Zeofuse supplier network. Plugs into your existing marketplace stack without re-engineering your platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:200ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><rect x="14" y="16" width="20" height="16" rx="2" stroke="#F47920" stroke-width="2.5"/><path d="M19 22h10M19 27h6" stroke="#F47920" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Automated Order Routing</h4>
+                        <p>Orders placed on your marketplace route to the correct supplier automatically. No manual forwarding, no email threads — fulfillment confirmation comes back to you via webhook.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:300ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><rect x="14" y="20" width="20" height="14" rx="2" stroke="#F47920" stroke-width="2.5"/><path d="M18 20v-4a6 6 0 0112 0v4" stroke="#F47920" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Live Inventory Visibility</h4>
+                        <p>Supplier stock levels update in Zeofuse in real time. Your marketplace always shows accurate availability — no more cancellations from out-of-stock items.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:400ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><path d="M16 32l4-8 4 4 4-8 4 8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h4>Supplier Performance Tracking</h4>
+                        <p>Monitor fulfillment rates, SLA compliance, return rates, and quality scores for every supplier — from a single operations dashboard.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:500ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><circle cx="24" cy="24" r="8" stroke="#F47920" stroke-width="2.5"/><path d="M24 12v4M24 32v4M12 24h4M32 24h4" stroke="#F47920" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Scalable Supplier Onboarding</h4>
+                        <p>Zeofuse handles supplier setup and catalog validation. Add 10 or 10,000 suppliers without adding headcount to your operations team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRATION OPTIONS -->
+    <section style="padding: 90px 0; background:#F4F6F9">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">How to Connect</span>
+                <h2>Flexible integration <span class="fz-highlight">for any marketplace stack</span></h2>
+                <p>Zeofuse is designed to plug into your existing infrastructure — no matter what platform you're built on</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 reveal" style="--delay:0ms">
+                    <div class="fz-vcard" style="text-align:center">
+                        <div style="font-size:2.5rem;margin-bottom:16px">🔌</div>
+                        <h4>REST API</h4>
+                        <p>Full-featured REST API with comprehensive documentation. Connect any platform, any stack. JSON-based, token-authenticated, webhook-enabled.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:100ms">
+                    <div class="fz-vcard fz-vcard--featured" style="text-align:center">
+                        <div style="font-size:2.5rem;margin-bottom:16px">⚡</div>
+                        <h4>Pre-Built Connectors</h4>
+                        <p>Native connectors for Shopify, WooCommerce, and Magento-based marketplaces. Go live with zero custom code required.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:200ms">
+                    <div class="fz-vcard" style="text-align:center">
+                        <div style="font-size:2.5rem;margin-bottom:16px">🤝</div>
+                        <h4>Managed Integration</h4>
+                        <p>Our integration team handles the full setup end-to-end. You describe your requirements — we configure and test everything.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIP CTA -->
+    <section style="padding: 0 0 90px; background:#F4F6F9">
+        <div class="container">
+            <div class="fz-early-access reveal" style="background:linear-gradient(145deg,#F47920,#D96810)">
+                <div>
+                    <span class="fz-early-access-badge" style="background:rgba(255,255,255,0.2);color:#fff">Partnership Program — Open Now</span>
+                    <h3>Become a Zeofuse Channel Partner</h3>
+                    <p>We're actively partnering with marketplaces and e-commerce channels who want to expand their supplier base. Get priority integration support and co-marketing opportunities.</p>
+                </div>
+                <a class="fz-btn-white" href="contact.html" style="white-space:nowrap;flex-shrink:0">Discuss Partnership</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="fz-cta-strip" style="background:linear-gradient(135deg,#1E2D45,#2A3F60)">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 reveal">
+                    <h2>Ready to expand your supplier network?</h2>
+                    <p>Let's discuss how Zeofuse can integrate with your marketplace and get you connected to quality suppliers in days, not months.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end reveal" style="--delay:200ms">
+                    <a class="fz-btn-white" href="contact.html">Talk to Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="fz-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 fz-footer-brand">
+                    <img src="images/zeofuse_logo.png" alt="Zeofuse" class="fz-footer-logo">
+                    <p>The multi-channel commerce platform for suppliers. Configure your catalog once — sell everywhere automatically.</p>
+                    <div class="fz-footer-socials">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 fz-footer-links">
+                    <h6>Platform</h6>
+                    <ul>
+                        <li><a href="index.html">How It Works</a></li>
+                        <li><a href="suppliers.html">For Suppliers</a></li>
+                        <li><a href="channels.html">For Channels</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 fz-footer-links">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 fz-footer-newsletter">
+                    <h6>Stay Updated</h6>
+                    <p>Get product updates and marketplace insights from the Zeofuse team.</p>
+                    <form class="fz-newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="fz-trust-strip">
+                        <span><i class="fas fa-shield-alt"></i> PCI DSS Compliant</span>
+                        <span><i class="fas fa-lock"></i> SOC 2 Ready</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fz-footer-bottom">
+                <p>© 2024 Zeofuse Pvt. Ltd. All rights reserved.</p>
+                <div class="fz-footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

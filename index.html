@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zeofuse — Configure your catalog once, sell on every marketplace automatically. Unified catalog management, OMS, and pricing engine for suppliers.">
+    <meta name="robots" content="index, follow">
+    <title>Zeofuse — One Catalog. Every Marketplace.</title>
+    <link rel="icon" type="image/png" href="images/zeofuse-fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fancy.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="spinner-wrapper">
+        <div class="loader"><div class="center loading"></div></div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand logo-image" href="index.html">
+                <img src="images/zeofuse_logo.png" alt="Zeofuse">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="suppliers.html">For Suppliers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="channels.html">For Channels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="contact.html">Get Demo</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="fz-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="fz-hero-text">
+                        <span class="fz-eyebrow">Multi-Channel Commerce Platform</span>
+                        <h1>One Catalog.<br><span style="color:#F47920">Every Marketplace.</span></h1>
+                        <p>Configure your products once in Zeofuse and sell across every major e-commerce channel — with unified order management, smart pricing, and real-time sync.</p>
+                        <div class="fz-hero-ctas">
+                            <a class="fz-btn-primary" href="suppliers.html">I'm a Supplier</a>
+                            <a class="fz-btn-ghost" href="channels.html">I'm a Channel</a>
+                        </div>
+                        <p class="fz-hero-sub-cta">Not sure? <a href="contact.html">Talk to our team →</a></p>
+                        <div class="fz-feature-pills">
+                            <span class="fz-pill"><span class="fz-pill-check">✓</span> No-code setup</span>
+                            <span class="fz-pill"><span class="fz-pill-check">✓</span> Real-time sync</span>
+                            <span class="fz-pill"><span class="fz-pill-check">✓</span> Works with your ERP</span>
+                            <span class="fz-pill"><span class="fz-pill-check">✓</span> All orders, one inbox</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="fz-hero-visual">
+                        <div class="fz-screen-card">
+                            <div class="fz-screen-topbar">
+                                <div class="fz-screen-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="fz-screen-title">
+                                    <span class="fz-screen-live-dot"></span>
+                                    app.zeofuse.com/dashboard
+                                </div>
+                            </div>
+                            <div class="fz-screen-body">
+                                <img src="./images/zeo-header.svg" alt="Zeofuse Dashboard">
+                            </div>
+                        </div>
+                        <div class="fz-float-notif">
+                            <div class="fz-notif-icon green">🛒</div>
+                            <div>
+                                <strong>New Order — Amazon</strong>
+                                <small>Order #8842 · just now</small>
+                            </div>
+                        </div>
+                        <div class="fz-float-notif">
+                            <div class="fz-notif-icon blue">🔄</div>
+                            <div>
+                                <strong>Catalog Synced</strong>
+                                <small>348 SKUs updated across 4 channels</small>
+                            </div>
+                        </div>
+                        <div class="fz-float-notif">
+                            <div class="fz-notif-icon">💰</div>
+                            <div>
+                                <strong>Price Rule Applied</strong>
+                                <small>Noon · 12 products repriced</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLATFORM OVERVIEW — the "how it works" flow -->
+    <section class="fz-platform-sec" id="how-it-works">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">The Zeofuse Model</span>
+                <h2>One connection. <span class="fz-highlight">Unlimited reach.</span></h2>
+                <p>Zeofuse sits between your catalog and every sales channel. Configure once — Zeofuse handles the rest.</p>
+            </div>
+
+            <div class="fz-flow-diagram">
+                <!-- Left: Supplier -->
+                <div class="fz-flow-supplier reveal">
+                    <div class="fz-flow-supplier-icon">
+                        <svg viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2" stroke="#F47920" stroke-width="2"/><path d="M9 6V5a5 5 0 0110 0v1" stroke="#F47920" stroke-width="2" stroke-linecap="round"/><path d="M4 12h20" stroke="#F47920" stroke-width="2"/></svg>
+                    </div>
+                    <h5>Your Catalog</h5>
+                    <p style="font-size:0.82rem;color:#6B7A8D;margin:6px 0 0">Upload once from your ERP, PIM, or spreadsheet</p>
+                    <div class="fz-flow-supplier-tags">
+                        <span>📦 Products &amp; Variants</span>
+                        <span>🏷️ Prices &amp; Rules</span>
+                        <span>📊 Stock Levels</span>
+                        <span>🖼️ Images &amp; Content</span>
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div class="fz-flow-arrow">
+                    <svg viewBox="0 0 36 20" fill="none"><path d="M0 10h32M24 2l8 8-8 8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Configured Once</span>
+                </div>
+
+                <!-- Center: Zeofuse Hub -->
+                <div class="fz-flow-hub reveal">
+                    <div class="fz-flow-hub-logo">
+                        <img src="images/zeofuse-fav.png" alt="Zeofuse">
+                    </div>
+                    <h4>Zeofuse Platform</h4>
+                    <div class="fz-flow-hub-features">
+                        <span>Catalog Management</span>
+                        <span>Order Management (OMS)</span>
+                        <span>Pricing Engine</span>
+                        <span>Real-Time Inventory Sync</span>
+                        <span>Analytics &amp; Reporting</span>
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div class="fz-flow-arrow">
+                    <svg viewBox="0 0 36 20" fill="none"><path d="M0 10h32M24 2l8 8-8 8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Distributed Live</span>
+                </div>
+
+                <!-- Right: Channels -->
+                <div class="fz-flow-channels reveal">
+                    <div class="fz-flow-channel-badge">Amazon</div>
+                    <div class="fz-flow-channel-badge">Noon</div>
+                    <div class="fz-flow-channel-badge">Shopify</div>
+                    <div class="fz-flow-channel-badge">eBay</div>
+                    <div class="fz-flow-channel-badge fz-flow-more">+ Every Channel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUDIENCE SPLIT — route visitors to the right page -->
+    <section class="fz-audience-sec">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 reveal" style="--delay:0ms">
+                    <div class="fz-audience-card fz-audience-card--supplier">
+                        <span class="fz-audience-tag">For Suppliers &amp; Brands</span>
+                        <h3>Sell on every channel without the complexity</h3>
+                        <p>You manage products, pricing, and orders once — Zeofuse distributes everything automatically to every marketplace you choose.</p>
+                        <ul class="fz-audience-list">
+                            <li>Configure your catalog once, publish everywhere</li>
+                            <li>All orders in one inbox, regardless of channel</li>
+                            <li>Automatic repricing to stay competitive</li>
+                            <li>Works with your existing ERP, PIM, or Shopify</li>
+                        </ul>
+                        <a class="fz-btn-white-outline" href="suppliers.html">Explore Supplier Features →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal" style="--delay:150ms">
+                    <div class="fz-audience-card fz-audience-card--channel">
+                        <span class="fz-audience-tag">For Marketplaces &amp; Channels</span>
+                        <h3>Access verified suppliers. Go live in days.</h3>
+                        <p>Connect your marketplace to Zeofuse and get instant access to a growing supplier network with structured, ready-to-publish product data.</p>
+                        <ul class="fz-audience-list">
+                            <li>Supplier onboarding in days, not months</li>
+                            <li>Standardized product data — ready to publish</li>
+                            <li>Automated order routing to the right supplier</li>
+                            <li>REST API or pre-built connector integration</li>
+                        </ul>
+                        <a class="fz-btn-white-outline" href="channels.html">Explore Channel Features →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="fz-marquee-sec">
+        <p class="fz-marquee-label">Building connections with the world's leading e-commerce platforms</p>
+        <div class="fz-marquee-track">
+            <div class="fz-marquee-inner">
+                <span class="fz-mlogo">Amazon</span>
+                <span class="fz-mlogo">Noon</span>
+                <span class="fz-mlogo">eBay</span>
+                <span class="fz-mlogo">Shopify</span>
+                <span class="fz-mlogo">Zalando</span>
+                <span class="fz-mlogo">Namshi</span>
+                <span class="fz-mlogo">Flipkart</span>
+                <span class="fz-mlogo">WooCommerce</span>
+                <span class="fz-mlogo">Magento</span>
+                <span class="fz-mlogo">Lazada</span>
+                <span class="fz-mlogo">Tokopedia</span>
+                <span class="fz-mlogo">Daraz</span>
+                <span class="fz-mlogo">Amazon</span>
+                <span class="fz-mlogo">Noon</span>
+                <span class="fz-mlogo">eBay</span>
+                <span class="fz-mlogo">Shopify</span>
+                <span class="fz-mlogo">Zalando</span>
+                <span class="fz-mlogo">Namshi</span>
+                <span class="fz-mlogo">Flipkart</span>
+                <span class="fz-mlogo">WooCommerce</span>
+                <span class="fz-mlogo">Magento</span>
+                <span class="fz-mlogo">Lazada</span>
+                <span class="fz-mlogo">Tokopedia</span>
+                <span class="fz-mlogo">Daraz</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLATFORM FEATURES (browser mockup) -->
+    <section class="fz-features-sec" id="features">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">Platform Capabilities</span>
+                <h2>Everything in <span class="fz-highlight">one dashboard</span></h2>
+                <p>Catalog management, order processing, pricing rules, and analytics — all in a single platform</p>
+            </div>
+            <div class="fz-browser-mockup reveal">
+                <div class="fz-browser-bar">
+                    <div class="fz-browser-dots">
+                        <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                    </div>
+                    <div class="fz-browser-url">app.zeofuse.com/dashboard</div>
+                </div>
+                <div class="fz-browser-content">
+                    <div class="elite-tab">
+                        <div id="nav">
+                            <div class="trigger-spec"></div>
+                            <span class="trigger" data-target="#tab-1">Catalog Management</span>
+                            <span class="trigger" data-target="#tab-2">Pricing Engine</span>
+                            <span class="trigger" data-target="#tab-3">Order Management</span>
+                            <span class="trigger" data-target="#tab-4">Analytics</span>
+                        </div>
+                        <div id="elite-sub">
+                            <div class="targets">
+                                <div class="target" id="tab-1">
+                                    <div class="row pt-4 pb-2">
+                                        <div class="col-md-12 col-lg-6 pb-4">
+                                            <img src="./images/catalog.PNG" class="img-fluid fz-tab-img">
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 vendor-sec">
+                                            <h5>Centralized Catalog Management</h5>
+                                            <p>Build your product catalog once in Zeofuse. Every channel receives your content in the exact format it requires — automatically.</p>
+                                            <ul>
+                                                <li>Import from ERP, PIM, Shopify, WooCommerce, or Excel</li>
+                                                <li>Map your attributes to each channel's schema once</li>
+                                                <li>Bulk edit products across all channels simultaneously</li>
+                                                <li>Content syndication keeps every channel up to date</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="target" id="tab-2">
+                                    <div class="row pt-4 pb-2">
+                                        <div class="col-md-12 col-lg-6 pb-4">
+                                            <img src="./images/pricing.PNG" class="img-fluid fz-tab-img">
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 vendor-sec">
+                                            <h5>Rules-Based Pricing Engine</h5>
+                                            <p>Set your pricing rules once. Zeofuse automatically adjusts prices per channel to keep you competitive while protecting your margins.</p>
+                                            <ul>
+                                                <li>Define min/max price boundaries per product</li>
+                                                <li>Automatic repricing when competitors change their prices</li>
+                                                <li>Set different price strategies per channel or region</li>
+                                                <li>Promotional pricing with scheduled start/end dates</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="target" id="tab-3">
+                                    <div class="row pt-4 pb-2">
+                                        <div class="col-md-12 col-lg-6 pb-4">
+                                            <img src="./images/catalog.PNG" class="img-fluid fz-tab-img">
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 vendor-sec">
+                                            <h5>Unified Order Management (OMS)</h5>
+                                            <p>All your orders from every channel flow into one inbox. No more logging into 10 different seller portals to process your day's orders.</p>
+                                            <ul>
+                                                <li>Single order dashboard across all channels</li>
+                                                <li>Automatic order routing to the right warehouse or fulfillment partner</li>
+                                                <li>Real-time inventory deduction across all channels on sale</li>
+                                                <li>Shipping updates pushed back to each channel automatically</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="target" id="tab-4">
+                                    <div class="row pt-4 pb-2">
+                                        <div class="col-md-12 col-lg-6 pb-4">
+                                            <img src="./images/dashboard.PNG" class="img-fluid fz-tab-img">
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 vendor-sec">
+                                            <h5>Cross-Channel Analytics</h5>
+                                            <p>See exactly what's selling, where, and at what margin — across every channel in a single view. Make decisions with real data.</p>
+                                            <ul>
+                                                <li>Revenue and margin breakdown per channel</li>
+                                                <li>Best-performing products by marketplace</li>
+                                                <li>Inventory turnover and stock-out alerts</li>
+                                                <li>Custom reports exportable in multiple formats</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT ZEOFUSE IS (product clarity section) -->
+    <section class="fz-value-sec" id="platform">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">What You Get</span>
+                <h2>A complete <span class="fz-highlight">commerce backend</span> for multi-channel selling</h2>
+                <p>Zeofuse replaces the patchwork of spreadsheets, manual uploads, and disconnected tools suppliers use today</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:0ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><path d="M14 24h20M14 16h20M14 32h12" stroke="#F47920" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Mini Catalog System</h4>
+                        <p>A clean product information management layer built into Zeofuse. Structure your catalog once — it becomes the source of truth for every channel.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:100ms">
+                    <div class="fz-vcard fz-vcard--featured">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.15)"/><rect x="14" y="16" width="20" height="16" rx="2" stroke="#fff" stroke-width="2.5"/><path d="M19 22h10M19 27h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Order Management (OMS)</h4>
+                        <p>Every order from every channel — Amazon, Noon, your own store — lands in one unified inbox. Process, route, and fulfill from a single screen.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:200ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><circle cx="24" cy="24" r="8" stroke="#F47920" stroke-width="2.5"/><path d="M24 12v4M24 32v4M12 24h4M32 24h4" stroke="#F47920" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Channel Distribution</h4>
+                        <p>Connect your catalog to any marketplace via Zeofuse's API or pre-built connectors. One integration replaces dozens of individual platform setups.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:300ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><path d="M16 32l4-8 4 4 4-8 4 8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h4>Pricing Automation</h4>
+                        <p>Set pricing rules and boundaries. Zeofuse enforces them automatically — every channel, every product, every time prices change.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:400ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><rect x="14" y="20" width="20" height="14" rx="2" stroke="#F47920" stroke-width="2.5"/><path d="M18 20v-4a6 6 0 0112 0v4" stroke="#F47920" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <h4>Inventory Control</h4>
+                        <p>Stock levels sync in real time across all channels. When you sell on Amazon, your Noon listing updates instantly. Never oversell again.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" style="--delay:500ms">
+                    <div class="fz-vcard">
+                        <div class="fz-vcard-icon">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#FEF0E6"/><path d="M20 24l4 4 8-8" stroke="#F47920" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="10" stroke="#F47920" stroke-width="2.5"/></svg>
+                        </div>
+                        <h4>ERP &amp; PIM Connectors</h4>
+                        <p>Already using SAP, Odoo, Shopify, or a custom ERP? Zeofuse connects to your existing systems — no need to change how you work internally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS — 3 steps -->
+    <section class="fz-process-sec">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">Quick Onboarding</span>
+                <h2>From signup to <span class="fz-highlight">first sale in 3 steps</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 reveal" style="--delay:0ms">
+                    <div class="fz-step">
+                        <div class="fz-step-num">01</div>
+                        <div class="fz-step-connector"></div>
+                        <h4>Connect Your Source</h4>
+                        <p>Link your ERP, PIM, Shopify store, or upload a spreadsheet. Zeofuse imports your products, prices, and inventory in minutes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:150ms">
+                    <div class="fz-step">
+                        <div class="fz-step-num">02</div>
+                        <div class="fz-step-connector"></div>
+                        <h4>Configure Your Channels</h4>
+                        <p>Select the marketplaces you want to sell on. Map your catalog attributes once — Zeofuse handles all the channel-specific formatting automatically.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:300ms">
+                    <div class="fz-step">
+                        <div class="fz-step-num">03</div>
+                        <h4>Go Live &amp; Automate</h4>
+                        <p>Your listings go live. Orders flow in. Zeofuse handles repricing, inventory deduction, and order routing — you just ship and grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRATION GRID -->
+    <section class="fz-integration-sec">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">Integrations Roadmap</span>
+                <h2>Built to connect with <span class="fz-highlight">every major platform</span></h2>
+                <p>Zeofuse is architected to integrate with any channel via REST API — we're actively building direct connectors for leading platforms</p>
+            </div>
+            <div class="fz-integration-grid reveal">
+                <div class="fz-int-badge">Shopify</div>
+                <div class="fz-int-badge">WooCommerce</div>
+                <div class="fz-int-badge">Magento</div>
+                <div class="fz-int-badge">Amazon</div>
+                <div class="fz-int-badge">Noon</div>
+                <div class="fz-int-badge">eBay</div>
+                <div class="fz-int-badge">Zalando</div>
+                <div class="fz-int-badge">Flipkart</div>
+                <div class="fz-int-badge">Lazada</div>
+                <div class="fz-int-badge">SAP ERP</div>
+                <div class="fz-int-badge">Odoo</div>
+                <div class="fz-int-badge">+ Via REST API</div>
+            </div>
+            <div class="text-center mt-4 reveal" style="--delay:200ms">
+                <a class="fz-btn-outline" href="contact.html">Request a Specific Integration</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="fz-pricing-sec" id="pricing">
+        <div class="container">
+            <div class="fz-section-header reveal">
+                <span class="fz-eyebrow-dark">Pricing</span>
+                <h2>Plans that <span class="fz-highlight">grow with you</span></h2>
+                <p>We're currently in early access. All pricing is customized to your catalog size and channel needs — no surprises.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 reveal" style="--delay:0ms">
+                    <div class="fz-price-card">
+                        <div class="fz-price-tier">Starter</div>
+                        <div class="fz-price-amount">Free Trial</div>
+                        <div class="fz-price-note">then custom pricing</div>
+                        <ul class="fz-price-features">
+                            <li>Up to 3 channels</li>
+                            <li>500 SKUs</li>
+                            <li>Catalog management</li>
+                            <li>Basic order management</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a class="fz-btn-outline" href="contact.html">Get Early Access</a>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:150ms">
+                    <div class="fz-price-card fz-price-card--featured">
+                        <div class="fz-price-popular">Most Popular</div>
+                        <div class="fz-price-tier">Growth</div>
+                        <div class="fz-price-amount">Custom</div>
+                        <div class="fz-price-note">based on channels &amp; SKUs</div>
+                        <ul class="fz-price-features">
+                            <li>Unlimited channels</li>
+                            <li>Up to 50,000 SKUs</li>
+                            <li>Catalog + OMS + Pricing</li>
+                            <li>Real-time inventory sync</li>
+                            <li>Analytics dashboard</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <a class="fz-btn-primary" href="contact.html">Request Pricing</a>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="--delay:300ms">
+                    <div class="fz-price-card">
+                        <div class="fz-price-tier">Enterprise</div>
+                        <div class="fz-price-amount">Custom</div>
+                        <div class="fz-price-note">for large catalogs &amp; teams</div>
+                        <ul class="fz-price-features">
+                            <li>Unlimited channels &amp; SKUs</li>
+                            <li>Custom ERP/PIM integration</li>
+                            <li>Dedicated onboarding team</li>
+                            <li>SLA-backed support</li>
+                            <li>White-label options</li>
+                            <li>Custom reporting</li>
+                        </ul>
+                        <a class="fz-btn-outline" href="contact.html">Talk to Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="fz-cta-strip">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 reveal">
+                    <h2>Ready to simplify your multi-channel selling?</h2>
+                    <p>We're onboarding our first suppliers now. Join the early access program and get hands-on setup support from our team.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end reveal" style="--delay:200ms">
+                    <a class="fz-btn-white" href="contact.html">Join Early Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="fz-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 fz-footer-brand">
+                    <img src="images/zeofuse_logo.png" alt="Zeofuse" class="fz-footer-logo">
+                    <p>The multi-channel commerce platform for suppliers. Configure your catalog once — sell everywhere automatically.</p>
+                    <div class="fz-footer-socials">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 fz-footer-links">
+                    <h6>Platform</h6>
+                    <ul>
+                        <li><a href="index.html">How It Works</a></li>
+                        <li><a href="suppliers.html">For Suppliers</a></li>
+                        <li><a href="channels.html">For Channels</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 fz-footer-links">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 fz-footer-newsletter">
+                    <h6>Stay Updated</h6>
+                    <p>Get product updates and marketplace insights from the Zeofuse team.</p>
+                    <form class="fz-newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="fz-trust-strip">
+                        <span><i class="fas fa-shield-alt"></i> PCI DSS Compliant</span>
+                        <span><i class="fas fa-lock"></i> SOC 2 Ready</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fz-footer-bottom">
+                <p>© 2024 Zeofuse Pvt. Ltd. All rights reserved.</p>
+                <div class="fz-footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+
+    <script>
+    (function () {
+        var triggerEls = Array.from(document.querySelectorAll(".trigger"));
+        var targetEls = [];
+        var triggerSpec = document.querySelector(".trigger-spec");
+        var targetsContainer = document.querySelector(".targets");
+        var currentTab = null;
+        triggerEls.forEach(function (trigger, ind) {
+            targetEls.push(document.querySelector(trigger.dataset.target));
+            trigger.addEventListener("click", function () {
+                if (currentTab !== null) {
+                    triggerEls[currentTab].classList.remove("active");
+                    targetEls[currentTab].classList.remove("active");
+                }
+                currentTab = ind;
+                trigger.classList.add("active");
+                targetEls[ind].classList.add("active");
+                targetsContainer.style.transform = "translateX(-" + ind + "00%)";
+                triggerSpec.style.transform = "translateX(" + ind + "00%)";
+            });
+        });
+        if (triggerEls.length) {
+            currentTab = 0;
+            triggerEls[0].classList.add("active");
+            if (targetEls[0]) targetEls[0].classList.add("active");
+        }
+    })();
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
