@@ -758,19 +758,80 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 991px) {
-    .fz-hero { padding: 100px 0 90px; min-height: auto; }
+    .fz-hero { padding: 100px 0 60px; min-height: auto; }
     .fz-step-connector { display: none; }
     .fz-price-card--featured { transform: scale(1); box-shadow: 0 10px 30px rgba(30,45,69,0.15); }
     .fz-price-card--featured:hover { transform: translateY(-6px); }
     .fz-cta-strip .text-lg-end { text-align: left !important; margin-top: 24px; }
     .fz-footer-brand { padding-right: 0; }
+
+    /* Flow diagram — stack vertically on tablet */
+    .fz-flow-diagram {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 8px;
+    }
+    .fz-flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+    .fz-flow-supplier, .fz-flow-hub, .fz-flow-channels { width: 100%; max-width: 480px; }
+
+    /* Browser tab nav — scrollable on tablet */
+    #nav { overflow-x: auto; white-space: nowrap; }
 }
+
 @media (max-width: 767px) {
-    .fz-trust-badges { gap: 10px; }
-    .fz-badge { padding: 10px 12px; }
-    .fz-integration-grid { grid-template-columns: repeat(3, 1fr); }
-    .fz-footer-bottom { flex-direction: column; text-align: center; }
+    /* Hero */
+    .fz-hero { padding: 90px 0 40px; }
     .fz-hero-text h1 { font-size: 2rem; }
+    .fz-hero-ctas { flex-direction: column; gap: 12px; }
+    .fz-btn-primary, .fz-btn-ghost { width: 100%; text-align: center; padding: 14px 20px; }
+    .fz-feature-pills { gap: 6px; }
+
+    /* Platform flow diagram */
+    .fz-platform-sec { padding: 60px 0; }
+    .fz-flow-diagram {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 8px;
+        margin-top: 32px;
+    }
+    .fz-flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+    .fz-flow-supplier, .fz-flow-hub, .fz-flow-channels { width: 100%; max-width: 100%; }
+    .fz-flow-channels { flex-direction: row !important; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .fz-flow-channel-badge { flex: 0 0 calc(50% - 4px); max-width: calc(50% - 4px); }
+    .fz-flow-channel-badge.fz-flow-more { flex: 0 0 100%; max-width: 100%; }
+
+    /* Sections padding */
+    .fz-features-sec, .fz-value-sec, .fz-process-sec,
+    .fz-integration-sec, .fz-pricing-sec { padding: 60px 0; }
+    .fz-audience-sec { padding: 60px 0; }
+
+    /* Browser mockup tabs — scrollable, compact */
+    #nav { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+    .fz-browser-mockup { border-radius: 12px; }
+    .elite-tab #nav .trigger { padding: 12px 14px; font-size: 0.8rem; }
+
+    /* Integration grid */
+    .fz-integration-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Pricing */
+    .fz-price-card { margin-bottom: 20px; }
+
+    /* Footer */
+    .fz-footer { padding: 60px 0 0; }
+    .fz-footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+    .fz-footer-links { margin-bottom: 24px; }
+
+    /* Section headers */
+    .fz-section-header h2 { font-size: clamp(1.4rem, 6vw, 2rem); }
+
+    /* CTA strip */
+    .fz-cta-strip { padding: 60px 0; }
+    .fz-cta-strip h2 { font-size: 1.5rem; }
+    .fz-btn-white { width: 100%; text-align: center; margin-top: 16px; }
+
+    /* Inner hero pages */
+    .fz-inner-hero { padding: 120px 0 70px; }
+    .fz-inner-hero h1 { font-size: clamp(1.6rem, 7vw, 2.4rem); }
 }
 
 /* ============================================
