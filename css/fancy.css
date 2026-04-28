@@ -763,7 +763,7 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 991px) {
-    .fz-hero { padding: 100px 0 60px; min-height: auto; }
+    .fz-hero { padding: 110px 0 50px; min-height: auto; }
     .fz-step-connector { display: none; }
     .fz-price-card--featured { transform: scale(1); box-shadow: 0 10px 30px rgba(30,45,69,0.15); }
     .fz-price-card--featured:hover { transform: translateY(-6px); }
@@ -785,7 +785,7 @@
 
 @media (max-width: 767px) {
     /* Hero */
-    .fz-hero { padding: 90px 0 70px; }
+    .fz-hero { padding: 110px 0 40px; }
     .fz-hero-text h1 { font-size: 2rem; text-align: center; }
     .fz-hero-text p { text-align: center; }
     .fz-hero-text { text-align: center; }
